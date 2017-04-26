@@ -1,0 +1,34 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2016.4                 /usr/local.nfs/pas/sw/Xilinx/Vivado/2016.4
+Matlab 9.1.0.441655 (R2016b)            /import/pas.local/sw/Matlab/R2016b
+Vivado 2016.4                           /usr/local.nfs/pas/sw/Xilinx/Vivado/2016.4
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Input data type for port "data_i" must have width=1.
+     Block: 'moore_state_machine/Black Box'
+Error 0002: Input data type for port "data_i" must have width=1.
+     Block: 'moore_state_machine/Black Box'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'moore_state_machine/Black Box'
+
+Details:
+Input data type for port "data_i" must have width=1.
+Error occurred during "Rate and Type Propagation".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'moore_state_machine/Black Box'
+
+Details:
+Input data type for port "data_i" must have width=1.
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Apr 26 18:44:54 2017
+# Process ID: 8743
+# Current directory: /home/netolo/DC/P01/PARTA/projects/DC_PART_A.runs/synth_1
+# Command line: vivado -log moore_4s.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source moore_4s.tcl
+# Log file: /home/netolo/DC/P01/PARTA/projects/DC_PART_A.runs/synth_1/moore_4s.vds
+# Journal file: /home/netolo/DC/P01/PARTA/projects/DC_PART_A.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source moore_4s.tcl -notrace

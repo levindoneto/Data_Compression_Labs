@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim1_parta_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sim1_parta" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="153800001fs"></ZoomEndTime>
+      <Cursor1Time time="35000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="148"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject type="logic" fp_name="/sim1_parta/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim1_parta/ce_i">
+      <obj_property name="ElementShortName">ce_i</obj_property>
+      <obj_property name="ObjectShortName">ce_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim1_parta/rst_i">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim1_parta/data_i">
+      <obj_property name="ElementShortName">data_i</obj_property>
+      <obj_property name="ObjectShortName">data_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sim1_parta/data_o">
+      <obj_property name="ElementShortName">data_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/sim1_parta/err_cnt">
+      <obj_property name="ElementShortName">err_cnt</obj_property>
+      <obj_property name="ObjectShortName">err_cnt</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/sim1_parta/clk_period">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/sim1_parta/uut/state_s">
+      <obj_property name="ElementShortName">state_s</obj_property>
+      <obj_property name="ObjectShortName">state_s</obj_property>
+   </wvobject>
+</wave_config>

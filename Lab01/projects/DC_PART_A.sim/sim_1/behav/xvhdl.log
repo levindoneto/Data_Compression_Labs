@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/netolo/DC/P01/PARTA/vhdl_files/moore_4s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity moore_4s
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/netolo/DC/P01/PARTA/vhdl_files/sim1_parta.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim1_parta

@@ -1,0 +1,1 @@
+-wto "b2ec5f06a93a47c38e2bbd6e59c2873e" --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "sim1_parta_behav" "xil_defaultlib.sim1_parta" -log "elaborate.log" 
