@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Jul  5 18:43:14 2017
+# Process ID: 9302
+# Current directory: /home/netolo/DC/P06/projects/DC_P06.runs/synth_1
+# Command line: vivado -log run_length_encoder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source run_length_encoder.tcl
+# Log file: /home/netolo/DC/P06/projects/DC_P06.runs/synth_1/run_length_encoder.vds
+# Journal file: /home/netolo/DC/P06/projects/DC_P06.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source run_length_encoder.tcl -notrace

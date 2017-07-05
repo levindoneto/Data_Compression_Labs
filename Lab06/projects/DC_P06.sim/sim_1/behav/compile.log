@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/netolo/DC/P06/vhdl_files/run_length_encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity run_length_encoder
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/netolo/DC/P06/vhdl_files/sim_run_length_encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_run_length_encoder

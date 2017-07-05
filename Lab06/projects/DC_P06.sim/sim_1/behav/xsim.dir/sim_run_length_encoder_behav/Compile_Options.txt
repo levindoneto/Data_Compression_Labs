@@ -1,0 +1,1 @@
+-wto "518d5e11f5c042ec85026e2326fd2411" --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "sim_run_length_encoder_behav" "xil_defaultlib.sim_run_length_encoder" -log "elaborate.log" 
