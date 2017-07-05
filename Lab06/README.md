@@ -10,7 +10,7 @@ __Author__
 
 ## Controller
 
-State machine for controlling the increment of counter and sending data out
+State machine for controlling the increment of counter and sending data out.
 
 ## Datapath
 
@@ -55,9 +55,9 @@ The output signals of Controller.
 
 ## Repository Structure
 
-* [Scripts](scripts) (Used scripts to use the project on the Vivado tool)
+* [Scripts](scripts) (Used scripts to use the project on the Vivado tool).
 
-* [VHDL Files](vhdl_files) (contains the vhdl files of the run-length encoder, as the hardware description and simulation)
+* [VHDL Files](vhdl_files) (contains the vhdl files of the run-length encoder, as the hardware description and simulation).
 
 ## License
 
