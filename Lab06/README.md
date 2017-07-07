@@ -1,12 +1,10 @@
-# IoT - Run-Length Encoder
+# Run-Length Encoder
 
 Run-length encoder for encoding AC components in JPEG baseline architecture
-
 
 __Author__
 
 [Levindo Gabriel Taschetto Neto (IPVS)](http://levindoneto.com)
-
 
 ## Controller
 
@@ -16,11 +14,9 @@ State machine for controlling the increment of counter and sending data out.
 
 Increasing internal counter, sending data out, verify if input is zero.
 
-
 ## The controller bases on Moore state machine with three states
 
 ![FSM](resources/fsm.jpg)
-
 
 ## The input signals for Controller
 
