@@ -1,12 +1,22 @@
 # Facsimile Coding with System Generator
 
-Run-length encoder for encoding AC components in JPEG baseline architecture
+Module “run_length_encoder” using VHDL language.
 
 __Author__
 
 [Levindo Gabriel Taschetto Neto (IPVS)](http://levindoneto.com)
 
+## Module 
 
+The module in a high level view can be seen in the image bellow.
+
+![Module](resources/module.jpg)
+
+## Finite State Machine
+
+The FSM can be seen bellow.
+
+![FSM](resources/fsm.jpg)
 
 ## Repository Structure
 

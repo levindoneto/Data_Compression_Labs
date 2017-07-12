@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
--- Company:
--- Engineer:
+-- Company: IPVS
+-- Developer: Levindo Gabriel Taschetto Neto
 --
 -- Create Date: 25.04.2017 15:46:47
 -- Design Name:
@@ -42,8 +42,8 @@ entity run_length_encoder is
         eol_i       : in STD_LOGIC;                         -- notify the end of row.
         -- output signals
         len_o    : out STD_LOGIC_VECTOR(10 downto 0);    -- the legth of run code cover up to 2^11 - 1 = 2047 length.
-        run_o       : out STD_LOGIC;                        -- run code, either 0: white, 1: black
-        valid_o     : out STD_LOGIC;                        -- run length code is valid or not.
+        run_s       : out STD_LOGIC;                        -- run code, either 0: white, 1: black
+        valid_i     : out STD_LOGIC;                        -- run length code is valid or not.
         eol_o       : out STD_LOGIC                         -- indicate the end of row data.
     );
 end run_length_encoder;
@@ -88,33 +88,90 @@ begin
                                 end if;
                             when s1 => 
                                 if pixel_i = '0' then
-                                    state_s <= s1;
+                                    state_s <= s0;
                                     counter_s <= counter_s + 1;
-                                    run_s <= 1; -- just to show in the output the counter_s is related to the pixel_i=1
+                                    run_s <= 0; 
                                 else
+								    state_s <= s1;
+                                    counter_s <= counter_s + 1;
+                                    run_s <= 1;
                             
                                 end if;                         
-                         
                          end case;
-                    
-                    end if;
-                    
-                 elsif
-                 
-                 
-                 end if
-                 
-            end if 
-      
+                    end if;         
+                else 
+					state_s<=s0;
+					counter_s <= (others => '0);
+					run_s <= "0";
+                 end if;
+            end if;
     end process edges;
-
 
     -- output signal proce_iss
     outputs: process(clk_i, rst_i)
     begin
-    
-    
-
-   end process outputs;
+		if rst='1' then
+			len_o<=(others=>'0');
+			run_s<='0';
+			valid_i<='0';
+			eol_o<='0';
+		elsif(rising_edge(clk))then
+			if valid_i='0' then
+				valid_i<='0';
+			else
+				if eol_i='1' then
+					len_o<=std_logic_vector(counter);
+					run_s<=run_reg;
+					valid_i<='1';
+					eol_o<='1';
+				else
+				case state is
+					whens0=>
+					if pixel_i='0' then
+						len_o<=(others=>'0');
+						run_s<=run_reg;
+						valid_i<='0';
+						eol_o<='0';
+					else
+						len_o<=std_logic_vector(counter);
+						run_s<=run_reg;
+						valid_i<='1';
+						eol_o<='0';
+					end if;
+				when s1=>
+					if pixel_i='0' then
+						len_o<=std_logic_vector(counter);
+						run_s<=run_reg;
+						valid_i<='1';
+						eol_o<='0';
+					else len_o<=(others=>'0');
+						run_s<='0';
+						valid_i<='0';
+						eol_o<='0';
+					end if;
+				end case;--case state
+			end if;--eol_i= '1'
+		end if;--valid_1 = '1'
+	end if;--rst= '1'
+end process;
 
 end Behavioral;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
