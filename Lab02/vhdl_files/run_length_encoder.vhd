@@ -105,7 +105,7 @@ begin
 					run_s <= "0";
                  end if;
             end if;
-    end process edges;
+    end process;
 
     -- output signal proce_iss
     outputs: process(clk_i, rst_i)
